@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Filidilo mudou de endereço</title>
+<script>
+  // Leva /tatino/<resto>?<busca>#<hash> para /filidilo/<resto>?<busca>#<hash>.
+  // Mantém ?b=<código> (links e desafios) e ?teste=1.
+  ;(function () {
+    var l = window.location
+    var caminho = l.pathname.replace(/^\/tatino(\/|$)/, '/filidilo/')
+    if (caminho.indexOf('/filidilo/') !== 0) caminho = '/filidilo/'
+    l.replace(caminho + l.search + l.hash)
+  })()
+</script>
+<link rel="canonical" href="https://marcelobritonet.github.io/filidilo/">
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0B1E3F; color: #E8EEF8; font: 16px/1.5 system-ui, sans-serif; text-align: center; padding: 24px; box-sizing: border-box; }
+  a { color: #7FD3E8; }
+</style>
+</head>
+<body>
+  <p>O Filidilo mudou de endereço.<br><a href="https://marcelobritonet.github.io/filidilo/">Abrir marcelobritonet.github.io/filidilo</a></p>
+</body>
+</html>
